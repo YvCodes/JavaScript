@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de autos</title>
+    <style>
+        #loading {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Venta de autos</h1>
+    <div id="loading">Loading...</div>
+    <div id="carSelection">
+        <label for="car">Selecciona un auto:</label>
+        <select id="car"></select>
+    </div>
+    <div id="userInfo">
+        <label for="name">Nombre de contacto:</label>
+        <input type="text" id="name">
+        <label for="downPayment">Pago inicial ($):</label>
+        <input type="number" id="downPayment">
+        <button onclick="calculateMonthlyRate()">Calcular</button>
+    </div>
+    <div id="result">
+        <h2>Estimado de pago mensual</h2>
+        <p id="monthlyPayment"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
