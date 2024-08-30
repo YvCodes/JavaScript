@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,12 @@
             display: none;
         }
     </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
     <h1>Venta de autos</h1>
-    <div id="loading">Loading...</div>
+    <div id="loading">Cargando...</div>
     <div id="carSelection">
         <label for="car">Selecciona un auto:</label>
         <select id="car"></select>
@@ -22,12 +24,14 @@
         <input type="text" id="name">
         <label for="downPayment">Pago inicial ($):</label>
         <input type="number" id="downPayment">
-        <button onclick="calculateMonthlyRate()">Calcular</button>
+        <button id="calculateButton">Calcular</button>
     </div>
     <div id="result">
         <h2>Estimado de pago mensual</h2>
         <p id="monthlyPayment"></p>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
 </body>
 </html>
